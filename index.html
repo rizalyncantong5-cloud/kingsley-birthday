@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 20th Birthday, Kingsley! 🤍</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- PASSWORD SCREEN -->
+    <section class="password-screen" id="passwordScreen">
+
+        <div class="lock-icon">🔐</div>
+
+        <p class="small-title">A PRIVATE LITTLE SURPRISE</p>
+
+        <h1>Before you enter...</h1>
+
+        <p>This little corner is made just for you. Enter the password to open your surprise. 🤍</p>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter your secret password"
+        >
+
+        <button onclick="unlockSite()">Unlock My Surprise ♡</button>
+
+        <p id="errorMessage" class="error-message"></p>
+
+    </section>
+
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="./music/birthday-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" class="music-button hidden" onclick="toggleMusic()">
+        ▶ Play Music
+    </button>
+
+
+    <!-- WELCOME SCREEN -->
+    <section id="welcome" class="welcome hidden">
+
+        <p class="small-title">A LITTLE SURPRISE FOR YOU</p>
+
+        <h1>Happy 20th Birthday, Kingsley! 🤍</h1>
+
+        <p>Someone made a little something just for you.</p>
+
+        <button onclick="openSurprise()">Open Your Surprise ♡</button>
+
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <main id="mainContent" class="hidden">
+
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <p class="small-title">NOVEMBER 8 • A SPECIAL DAY</p>
+
+            <h1>
+                Happy Birthday,<br>
+                Kingsley! 🤍
+            </h1>
+
+            <p>Wishing you happiness, peace, and everything your heart deserves.</p>
+
+            <div class="heart">♡</div>
+
+            <p class="hero-note">A little surprise, made just for you.</p>
+
+        </section>
+
+
+        <!-- PHOTOS -->
+        <section class="section">
+
+            <p class="small-title">A FEW PHOTOS</p>
+
+            <h2>Little Moments of You</h2>
+
+            <p class="section-description">
+                A few pictures of you that I wanted to keep in this little corner.
+            </p>
+
+            <div class="photo-grid">
+
+                <div class="photo-card">
+                    <img src="./images/kingsley1.jpg" alt="Kingsley photo 1">
+                    <p>A little moment of you. ♡</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="./images/kingsley2.jpg" alt="Kingsley photo 2">
+                    <p>One of my favorite pictures.</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="./images/kingsley3.jpg" alt="Kingsley at the pool">
+                    <p>One of the little things I'll remember. ♡</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="./images/kingsley4.jpg" alt="Kingsley photo 4">
+                    <p>Just you, being you.</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="./images/kingsley5.jpg" alt="Kingsley photo 5">
+                    <p>A picture worth keeping. ♡</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- OUR MEMORY -->
+        <section class="section memory-section">
+
+            <p class="small-title">JUST ONE, BUT SPECIAL</p>
+
+            <h2>Our One Special Memory</h2>
+
+            <div class="memory-card">
+
+                <img src="./images/ourmemory.jpg" alt="Our special memory">
+
+                <p class="memory-caption">
+                    We may have only one picture together, but it holds a moment I'll always remember. 🤍
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- LETTER -->
+        <section class="section letter-section">
+
+            <p class="small-title">SOMETHING FROM MY HEART</p>
+
+            <h2>A Letter for You</h2>
+
+            <div class="letter-card">
+
+                <p><strong>Happy 20th Birthday, Kingsley! 🤍</strong></p>
+
+                <p>
+                    I know things didn't turn out the way we expected, and maybe this isn't how I imagined things would be between us. We were just getting to know each other, but somehow, my feelings grew deeper than I expected. I never thought I would end up caring for someone this much in such a short time.
+                </p>
+
+                <p>
+                    I guess sometimes, two people can have something special but still not be on the same page. I know you're not ready for commitment, and I respect that. It just hurts knowing that you chose to end things rather than try to figure things out together. But I won't hold that against you.
+                </p>
+
+                <p>
+                    I just want you to know that I'm grateful for every moment we shared, the little things, the laughs, the memories, and even the moments I wish could have lasted longer. I'll always be thankful that I got to know you, even if our story didn't go as far as I hoped.
+                </p>
+
+                <p>
+                    Sometimes I wonder what could have happened if things were different, if we had more time, or if we had both been ready to take the risk. Maybe things would have turned out differently. But I guess not everything that feels right is meant to happen at the right time.
+                </p>
+
+                <p>
+                    I hope you know that what I felt for you was genuine. I wasn't just enjoying the attention or the excitement of having someone. I was genuinely looking forward to knowing you more, discovering the little things about you, and seeing where things could take us. I wanted to be there not just during the happy moments but also when things weren't easy.
+                </p>
+
+                <p>
+                    I won't pretend that I don't miss you, because I do. I miss the way things used to be, the little moments, and the feeling of having someone I was excited to talk to every day. But I also understand that sometimes, letting go is the only thing left to do when two people want different things at the moment.
+                </p>
+
+                <p>
+                    On your special day, I genuinely wish you happiness, peace, success, and everything your heart is hoping for. I hope life treats you kindly, and I hope you never lose the good parts of yourself. I hope you achieve all the things you've been dreaming of, and I hope you find reasons to smile even on your hardest days.
+                </p>
+
+                <p>
+                    And lastly, thank you for being someone who made me feel something I didn't expect to feel. Maybe we were never officially together, but that doesn't mean what I felt was any less real. You became a special part of my days, and I'll always keep the good memories with me.
+                </p>
+
+                <p>
+                    I don't know if our paths will ever cross again in the same way, but if there's one thing I want you to remember, it's that someone genuinely wished things could have worked out with you. Someone was willing to understand you, be patient with you, and take a chance on what you could have been together.
+                </p>
+
+                <p>
+                    I won't ask you to come back, and I won't ask you to change your mind. I just hope that someday, when you're finally ready for the kind of love you deserve, you'll never have to question whether someone is willing to choose you.
+                </p>
+
+                <p>
+                    Happy 20th birthday, Kingsley. Please take care of yourself, always. You may just be someone I once got to know, but you became someone I'll remember with a smile and a little bit of sadness.
+                </p>
+
+                <p class="last-line">
+                    I guess we were almost something, and that's what makes it hard to forget. 🤍
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL MESSAGE -->
+        <section class="ending">
+
+            <div class="heart">♡</div>
+
+            <h2>One Last Thing...</h2>
+
+            <p>
+                No matter how things turned out, I'm still wishing you the best.
+                Enjoy your day, Kingsley. You deserve happiness. 🤍
+            </p>
+
+            <p class="small-title">WITH LOVE, ALWAYS.</p>
+
+        </section>
+
+
+        <footer>
+            Made with love ♡
+        </footer>
+
+    </main>
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
