@@ -1,29 +1,28 @@
 
-// CORRECT PASSWORD
 const correctPassword = "111106";
 
-// GET MUSIC ELEMENTS
 const music = document.getElementById("backgroundMusic");
 const musicButton = document.getElementById("musicButton");
 
-
-// UNLOCK PASSWORD
 function unlockSite() {
+    const enteredPassword =
+        document.getElementById("passwordInput").value;
 
-    const enteredPassword = document.getElementById("passwordInput").value;
-    const errorMessage = document.getElementById("errorMessage");
+    const errorMessage =
+        document.getElementById("errorMessage");
 
     if (enteredPassword === correctPassword) {
 
-        document.getElementById("passwordScreen").classList.add("hidden");
+        document.getElementById("passwordScreen")
+            .classList.add("hidden");
 
-        document.getElementById("welcome").classList.remove("hidden");
+        document.getElementById("welcome")
+            .classList.remove("hidden");
 
         musicButton.classList.remove("hidden");
 
         errorMessage.textContent = "";
 
-        // AUTOMATIC MUSIC PLAYBACK
         music.volume = 1;
         music.currentTime = 0;
 
@@ -32,30 +31,23 @@ function unlockSite() {
                 musicButton.textContent = "🎵 Music: ON";
             })
             .catch((error) => {
-                musicButton.textContent = "▶ Play Music";
                 console.log("Music playback error:", error);
+                musicButton.textContent = "▶ Play Music";
             });
 
     } else {
-
-        errorMessage.textContent = "Oops! Wrong password. Try again. ♡";
-
+        errorMessage.textContent =
+            "Oops! Wrong password. Try again. ♡";
     }
-
 }
 
+document.getElementById("passwordInput")
+    .addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            unlockSite();
+        }
+    });
 
-// ENTER KEY TO UNLOCK
-document.getElementById("passwordInput").addEventListener("keydown", function(event) {
-
-    if (event.key === "Enter") {
-        unlockSite();
-    }
-
-});
-
-
-// MUSIC ON / OFF
 function toggleMusic() {
 
     if (music.paused) {
@@ -75,20 +67,18 @@ function toggleMusic() {
         musicButton.textContent = "▶ Play Music";
 
     }
-
 }
 
-
-// OPEN SURPRISE
 function openSurprise() {
 
-    document.getElementById("welcome").classList.add("hidden");
+    document.getElementById("welcome")
+        .classList.add("hidden");
 
-    document.getElementById("mainContent").classList.remove("hidden");
+    document.getElementById("mainContent")
+        .classList.remove("hidden");
 
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
-
 }
